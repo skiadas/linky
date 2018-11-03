@@ -7,5 +7,5 @@ alphabet = string.ascii_uppercase + string.digits
 def makeBucketId():
    return ''.join([random.choice(alphabet) for _ in range(6)])
 
-def md5(password):
-   return md5(password).hexdigest()
+def getHash(password):
+   return md5(password.encode('utf-8')).hexdigest()

@@ -33,6 +33,12 @@ class Db:
       Session = sessionmaker(bind=self.engine)
       self.session = Session()
 
+   def commit(self):
+      self.session.commit()
+
+   def rollback(self):
+      self.session.rollback()
+
    # TODO Must implement the following methods
    def getBuckets(self):
       pass
@@ -46,10 +52,13 @@ class Db:
    def deleteBucket(self, bucket):
       pass
 
-   def addShortcut(self, hash, bucket, link, description=None):
+   def getShortcut(self, linkHash, bucket):
+      pass
+
+   def addShortcut(self, linkHash, bucket, link, description=None):
       pass
 
    def deleteShortcut(self, shortcut):
       pass
 
-   # TODO: May need to add your db own functions here
+   # TODO: May need to add your own db functions here
