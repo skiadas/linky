@@ -4,7 +4,7 @@ from hashlib import md5
 
 alphabet = string.ascii_uppercase + string.digits
 
-def makeBucketId():
+def makeId():
    return ''.join([random.choice(alphabet) for _ in range(6)])
 
 def getHash(password):

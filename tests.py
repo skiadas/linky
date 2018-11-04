@@ -1,9 +1,9 @@
 from main import app, db
-from utils import makeBucketId, getHash
+from utils import makeId, getHash
 
 session = db.session
 
-BUCKET_ID = makeBucketId()
+BUCKET_ID = makeId()
 BUCKET_PASSWORD = "myPassword"
 PASSWORD_HASH = getHash(BUCKET_PASSWORD)
 SHORTCUT_HASH = "mountains"

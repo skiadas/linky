@@ -35,6 +35,10 @@ def bucket_list():
 def bucket_contents(bucketId):
    pass
 
+@app.route('/', methods = ['POST'])
+def bucket_create():
+   pass
+
 @app.route('/<bucketId>', methods = ['PUT'])
 def bucket_create(bucketId):
    pass
@@ -49,6 +53,10 @@ def shortcut_get_link(bucketId, hash):
 
 @app.route('/<bucketId>/<hash>', methods = ['PUT'])
 def shortcut_create_with_hash(bucketId, hash):
+   pass
+
+@app.route('/<bucketId>', methods = ['POST'])
+def shortcut_create(bucketId):
    pass
 
 @app.route('/<bucketId>/<hash>', methods = ['DELETE'])
