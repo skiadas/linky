@@ -40,7 +40,7 @@ def bucket_create():
    pass
 
 @app.route('/<bucketId>', methods = ['PUT'])
-def bucket_create(bucketId):
+def bucket_create_with_id(bucketId):
    pass
 
 @app.route('/<bucketId>', methods = ['DELETE'])

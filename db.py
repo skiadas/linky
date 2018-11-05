@@ -46,7 +46,7 @@ class Db:
    def getBucket(self, id):
       pass
 
-   def addBucket(self, id, password, description=None):
+   def addBucket(self, id, passwordHash, description=None):
       pass
 
    def deleteBucket(self, bucket):
